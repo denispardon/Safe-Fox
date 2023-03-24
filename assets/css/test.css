@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.test__img {
+    position: absolute;
+    width: 1879px;
+    height: 939px;
+    z-index: 1;
+}
+
+.test__lis {
+    position: absolute;
+    left: 950px;
+    top: 300px;
+    z-index: 2;
+}
+
+.test__rectangle {
+    position: absolute;
+    width: 513px;
+    height: 253px;
+    left: 495px;
+    top: 176px;
+    z-index: 2;
+
+    background-color: #D9D9D9;
+    opacity: .82;
+    border-radius: 30px;
+}
+
+.test__text {
+    position: absolute;
+    width: 478px;
+    height: 168px;
+    left: 513px;
+    top: 199px;
+    z-index: 2;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+
+    margin-top: 10px;
+    
+    color: #000000;
+}
+
+a.btn {
+    position: absolute;
+    width: 238px;
+    height: 36px;
+    left: 1500px;
+    top: 865px;
+    z-index: 2;
+
+    color: #fff;
+
+    text-decoration: none;
+    text-align: center;
+
+    transition: background .2s linear, color .2s linear;
+}
+
+.btn {
+    padding: 7px;
+
+    background: #ED8A4F;
+    box-shadow: 0px 10px 40px rgba(201, 38, 42, 0.2);
+    border-radius: 80px;
+}
+
+.btn:hover {
+    background-color: #9EC7DD;
+}
+
+.btn-prev {
+    margin-left: -300px;
+}
+
+@media (max-width: 1280px) {
+    .test__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .test__lis {
+        width: 600px;
+        height: 550px;
+        left: 600px;
+        top: 260px;
+    }
+
+    .test__rectangle {
+        left: 250px;
+        top: 230px;
+    }
+
+    .test__text {
+        left: 260px;
+        top: 240px;
+    }
+
+    a.btn {
+        left: 700px;
+        top: 890px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .test__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .test__lis {
+        width: 500px;
+        height: 450px;
+        left: 370px;
+        top: 300px;
+    }
+
+    .test__rectangle {
+        left: 150px;
+        top: 150px;
+    }
+
+    .test__text {
+        left: 160px;
+        top: 160px;
+    }
+
+    a.btn {
+        left: 430px;
+        top: 800px;
+    }
+}
